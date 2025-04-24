@@ -52,6 +52,7 @@ Each file contains:
 ---
 
 ## Feature Extraction
+
 - **TF-IDF**  
   - Unigram and bigram features  
   - Used with classical models (Logistic regression)
@@ -60,10 +61,33 @@ Each file contains:
   - **GloVe**  
   - **Word2Vec**  
   - **FastText**
-    
+  
 - **1D CNN**  
   - Used on top of embedding layers  
   - Captures local n-gram patterns in the tweet sequence
+
+- **RNN**  
+  - Captures sequential dependencies in text  
+  - Suitable for modeling time-series or sequence-based data
+
+- **LSTM**  
+  - Long Short-Term Memory  
+  - Overcomes RNN’s vanishing gradient problem  
+  - Better at capturing long-range dependencies
+
+- **GRU**  
+  - Gated Recurrent Unit  
+  - Similar to LSTM but with a simpler architecture  
+  - Fewer parameters and faster to train
+
+- **Unidirectional LSTM, GRU**  
+  - Process text in one direction (usually left-to-right)  
+  - Suitable when past context is more important than future context
+
+- **Bidirectional LSTM, GRU**  
+  - Processes text in both directions (left-to-right and right-to-left)  
+  - Captures both past and future context for each time step in the sequence
+
 
 ---
 
